@@ -40,6 +40,7 @@ Strength: The project encompasses a rich data source and allows students to expl
 
 **Company / Org:** University of Chicago  
 **Challenge Advisor:** Nathan Rickert, naterick12@gmail.com  
+**AI Studio Coach:** Julio Contreras, Julio.Contreras@breakthroughtech.org   
 **Program:** Break Through Tech AI Studio - Fall 2026
 
 ---
