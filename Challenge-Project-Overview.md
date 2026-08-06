@@ -61,14 +61,16 @@ Recommendation quality: Precision@K (e.g., K=5 or 10), Genre consistency, Artist
 
 ### Project Milestones
 
-Use these milestones to guide your work. Your team will create a **GitHub Projects board** to track tasks within each milestone.
+| Month | Milestone | Key Activities |
+| :--- | :--- | :--- |
+| September | Data Processing, Feature Engineering & Baseline Engine | • Load and clean the Spotify dataset (numerical audio features, metadata, categorical genres, time-series metrics).<br>• Engineer feature vectors using audio attributes (danceability, energy, acousticness, tempo, key).<br>• Implement vector similarity metrics (Cosine Similarity, Euclidean Distance) to build an initial baseline recommendation system.<br>• Perform Exploratory Data Analysis (EDA) on audio feature distributions and genre overlap. |
+| October | Graph Construction & Advanced Modeling | • Construct a musical similarity graph linking songs based on feature similarity thresholds.<br>• Train graph-based models or advanced clustering algorithms (e.g., K-Means, Louvain community detection, or Graph Neural Networks) to capture implicit relationships.<br>• Develop interpretable feature-importance mechanisms explaining *why* songs are linked. |
+| November / December | Evaluation, Interpretability UI & Deliverables | • Evaluate recommendation quality using similarity metrics and user satisfaction proxies.<br>• Build an interactive Streamlit dashboard allowing users to query songs, visualize similarity subgraphs, and view feature contribution breakdowns.<br>• Package a clean, reproducible GitHub repository with full project documentation and stakeholder presentation materials. |
 
-| Month       | Milestone                     | Key Activities                                                       |
-|-------------|-------------------------------|---------------------------------------------------------------------|
-| **September** | Data Understanding              | Explore dataset, handle missing values, document findings             |
-| **October**   | Model Development             | Train baseline model, experiment with approaches, iterate           |
-| **November**  | Evaluation & Presentation     | Finalize model, prepare presentation, document results              |
-
+### Stretch Goals
+* **Dynamic Playlist Generation:** Extend the recommendation engine to construct sequential playlists with smooth transition constraints across tempo, key, and energy.
+* **Multi-Modal Similarity Integration:** Incorporate textual features (lyric embeddings/sentiment analysis) alongside numerical audio characteristics to form a hybrid multimodal recommendation graph.
+* **Interactive Subgraph Explorer:** Deploy a NetworkX / PyVis visualizer in the Streamlit app for real-time navigation of song clusters and edge connection weights.
 > **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
 
 ---
