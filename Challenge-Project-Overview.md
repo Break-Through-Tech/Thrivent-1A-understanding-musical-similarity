@@ -65,11 +65,11 @@ Recommendation quality:
 
 Model performance:   
 - Comparison across KNN vs LR vs tree-based models
-- - Feature importance interpretability
+- Feature importance interpretability
 
 Structural insight:   
 - Whether graph structure improves interpretability of recommendations
-- - Whether clusters align with known musical groupings
+- Whether clusters align with known musical groupings
  
 ### Stretch Goals
 
