@@ -57,20 +57,35 @@ The University of Chicago is a prestigious institution known for its rigorous ac
 In this project, you will use audio feature data from 12M Spotify songs (e.g., danceability, energy, tempo, valence, acousticness, etc.) and machine learning techniques such as feature engineering, K-Nearest Neighbors, logistic regression, decision trees, clustering, and model evaluation methods to build and evaluate a music similarity and recommendation system that predicts and ranks similar songs based on audio characteristics. This will help a music streaming company (like Spotify) address the challenge of improving music discovery and understanding how song characteristics influence perceived similarity in recommendation systems.
 
 ### Success Criteria
-Recommendation quality: Precision@K (e.g., K=5 or 10), Genre consistency, Artist diversity. Model performance: Comparison across KNN vs LR vs tree-based models, Feature importance interpretability. Structural insight: Whether graph structure improves interpretability of recommendations and whether clusters align with known musical groupings.
 
+Recommendation quality:   
+- Precision@K (e.g., K=5 or 10)
+- Genre consistency of recommendations
+- Artist diversity (avoid overfitting to single artist similarity)
+
+Model performance:   
+- Comparison across KNN vs LR vs tree-based models
+- - Feature importance interpretability
+
+Structural insight:   
+- Whether graph structure improves interpretability of recommendations
+- - Whether clusters align with known musical groupings
+ 
+### Stretch Goals
+
+- Add PCA or UMAP visualization of song space
+- Experiment with different distance metrics (cosine vs euclidean vs weighted features)
+- Build interactive “song explorer” notebook
+- Compare clustering vs graph communities quantitatively
+  
 ### Project Milestones
 
 | Month | Milestone | Key Activities |
-| :--- | :--- | :--- |
-| September | Data Processing, Feature Engineering & Baseline Engine | • Load and clean the Spotify dataset (numerical audio features, metadata, categorical genres, time-series metrics).<br>• Engineer feature vectors using audio attributes (danceability, energy, acousticness, tempo, key).<br>• Implement vector similarity metrics (Cosine Similarity, Euclidean Distance) to build an initial baseline recommendation system.<br>• Perform Exploratory Data Analysis (EDA) on audio feature distributions and genre overlap. |
-| October | Graph Construction & Advanced Modeling | • Construct a musical similarity graph linking songs based on feature similarity thresholds.<br>• Train graph-based models or advanced clustering algorithms (e.g., K-Means, Louvain community detection, or Graph Neural Networks) to capture implicit relationships.<br>• Develop interpretable feature-importance mechanisms explaining *why* songs are linked. |
-| November / December | Evaluation, Interpretability UI & Deliverables | • Evaluate recommendation quality using similarity metrics and user satisfaction proxies.<br>• Build an interactive Streamlit dashboard allowing users to query songs, visualize similarity subgraphs, and view feature contribution breakdowns.<br>• Package a clean, reproducible GitHub repository with full project documentation and stakeholder presentation materials. |
+|---|---|---|
+| September | Data Understanding & Baseline Modeling | • Perform EDA (distributions, correlations, missingness)<br>• Engineer normalized feature set<br>• Build baseline similarity system |
+| October | Model Comparison & Structured Similarity | • Train and compare ML models<br>• Introduce clustering (KMeans or DBSCAN)<br>• Compare clustering results vs known metadata (genre/artist) |
+| November | Graph Interpretation & Final System | • Analyze song similarity graph using NetworkX:<br>• Compare graph-based neighborhoods vs feature-based recommendations<br>• Finalize recommendation system pipeline: |
 
-### Stretch Goals
-* **Dynamic Playlist Generation:** Extend the recommendation engine to construct sequential playlists with smooth transition constraints across tempo, key, and energy.
-* **Multi-Modal Similarity Integration:** Incorporate textual features (lyric embeddings/sentiment analysis) alongside numerical audio characteristics to form a hybrid multimodal recommendation graph.
-* **Interactive Subgraph Explorer:** Deploy a NetworkX / PyVis visualizer in the Streamlit app for real-time navigation of song clusters and edge connection weights.
 > **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
 
 ---
@@ -80,10 +95,10 @@ Recommendation quality: Precision@K (e.g., K=5 or 10), Genre consistency, Artist
 **Name and Source:** Audio feature data from Spotify  
 **Format:** CSV/TSV  
 **Size:** under 1gb  
-**Location:** [Link to dataset or instructions for accessing it]
+**Location:** https://www.kaggle.com/datasets/rodolfofigueroa/spotify-12m-songs
 
 ### Key Details
-- Audio feature data from 12M Spotify songs including danceability, energy, tempo, valence, acousticness, etc. The dataset contains numerical/quantitative, categorical, text, and time series data in CSV/TSV format.
+- [Brief description of what's in the data]
 - [Any known limitations or preprocessing needed]
 - [Link to data dictionary or documentation, if available]
 
@@ -91,22 +106,13 @@ Recommendation quality: Precision@K (e.g., K=5 or 10), Genre consistency, Artist
 
 ## 🛠️ Suggested Approach
 
-**ML Problem Type:** Classification  
+**ML Problem Type:** Classification,Regression,Clustering,Recommendation Systems,Graph-based data analysis / similarity modeling
 
 **Recommended Libraries:**
-- Feature engineering
-- K-Nearest Neighbors
-- Logistic regression
-- Decision trees
-- Clustering (KMeans, DBSCAN)
-- Model evaluation
-- NetworkX (graph-based data analysis)
-- PCA
-- UMAP
-- Google Colab.
+- [e.g., pandas, scikit-learn, TensorFlow, Hugging Face]
 
 **Evaluation Metrics:**
-- Precision/Recall, F1 Score
+- [e.g., Accuracy, Precision/Recall, RMSE, BLEU score]
 
 ---
 
@@ -115,16 +121,16 @@ Recommendation quality: Precision@K (e.g., K=5 or 10), Genre consistency, Artist
 The following resources will help your team understand the problem space and potential technical approaches for this project:
 
 **Background Reading:**
-- [Link to an article or blog post about the problem domain]
-- [Link to an industry report or case study]
+- [e.g., Link to an article or blog post about the problem domain]
+- [e.g., Link to an industry report or case study]
 
 **Technical Tutorials:**
-- [Link to a free tutorial on the ML technique(s) involved]
-- [Link to documentation for a key library or tool]
+- [e.g., Link to a free tutorial on the ML technique(s) involved]
+- [e.g., Link to documentation for a key library or tool]
 
 **Code Examples:**
-- [Link to a relevant GitHub repo]
-- [Link to a sample implementation or starter code]
+- [e.g., Link to a relevant GitHub repo]
+- [e.g., Link to a sample implementation or starter code]
 
 **Other:**
 - [Links to any additional resources — e.g., papers, videos, podcasts, etc.]
@@ -135,14 +141,19 @@ The following resources will help your team understand the problem space and pot
 
 ## 🤝 How We'll Work Together
 
-**Check-ins:** During our biweekly 60-min AI Studio Lab Section meeting block (2nd and 4th week of every month)  
-**Communication:** Slack (Break Through Tech workspace)  
-**Response time:** Within 48 hours on weekdays  
+**Official check-ins:** During our biweekly 45-minute AI Studio Lab Section meeting block (2nd and 4th week of every month)
 
-**Recommended Tools:**
-- **Coding:** Google Colab
-- **Collaboration:** GitHub, Notion
-- **Virtual Meetings:** Zoom, Google Meet
+ **Other ways to reach out to me with questions:** 
+* [e.g., Your team's channel within Break Through Tech’s Discord space]
+* [e.g., Email; please copy your teammates and AI Studio Coach]
+* [e.g., Request a team check-in on Zoom]
+* [Note: I will aim to respond within 48 hours. Please reach out to your AI Studio Coach with urgent questions.]
+
+> 💡 **Challenge Advisor: Please update the above based on your availability and preference. If you are not able to answer questions or meet with fellows outside of the biweekly Lab Section check-ins, simply write in "N/A (only available during the official check-in times)"**
+
+**Recommended free coding / collaboration tools**
+* […]
+* […]
 
 ---
 
@@ -152,10 +163,10 @@ The following resources will help your team understand the problem space and pot
 2. **Begin reviewing the dataset** using the link above
 3. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 
-I'm excited to work with you!
+I’m excited to work with you!
 
 ---
 
 ## ❓ Questions?
 
-Please bring any questions to our first meeting during the week of August 24th (Break Through Tech's Bridge to Studio - Session B).
+Please bring any questions to our first meeting during the week of August 24th (Break Through Tech’s Bridge to Studio - Session C). 
