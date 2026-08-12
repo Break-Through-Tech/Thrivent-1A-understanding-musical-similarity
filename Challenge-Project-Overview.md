@@ -1,4 +1,3 @@
----
 # Understanding Musical Similarity: Building a Feature-Based Recommendation System with Graph-Based Interpretability
 
 **Company / Org:** Thrivent
