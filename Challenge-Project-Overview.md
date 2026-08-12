@@ -1,7 +1,7 @@
 # Understanding Musical Similarity: Building a Feature-Based Recommendation System with Graph-Based Interpretability
 
-**Company / Org:** Thrivent
-**Challenge Advisor:** Nathan Rickert, naterick12@gmail.com  
+**Company / Org:** Thrivent   
+**Challenge Advisor:** Nathan Rickert, naterick12@gmail.com   
 **AI Studio Coach:** Julio Contreras, Julio.Contreras@breakthroughtech.org   
 **Program:** Break Through Tech AI Studio - Fall 2026
 
