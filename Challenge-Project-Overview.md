@@ -10,7 +10,7 @@
 ## 🎯 The Challenge
 
 ### Project Summary
-In this project, you will use audio feature data from 12M Spotify songs (e.g., danceability, energy, tempo, valence, acousticness, etc.) and machine learning techniques such as feature engineering, K-Nearest Neighbors, logistic regression, decision trees, clustering, and model evaluation methods to build and evaluate a music similarity and recommendation system that predicts and ranks similar songs based on audio characteristics. This will help a music streaming company (like Spotify) address the challenge of improving music discovery and understanding how song characteristics influence perceived similarity in recommendation systems.
+In this project, you will use audio feature data from 1.2M Spotify songs (e.g., danceability, energy, tempo, valence, acousticness, etc.) and machine learning techniques such as feature engineering, K-Nearest Neighbors, logistic regression, decision trees, clustering, and model evaluation methods to build and evaluate a music similarity and recommendation system that predicts and ranks similar songs based on audio characteristics. This will help a music streaming company (like Spotify) address the challenge of improving music discovery and understanding how song characteristics influence perceived similarity in recommendation systems.
 
 ### Success Criteria
 
